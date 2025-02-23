@@ -1,54 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎟️ Ticketchain
+Ticketchain leverages **NFTs (Non-Fungible Tokens)** to revolutionize ticketing. Each ticket is uniquely verifiable on the blockchain, ensuring security, authenticity, and fair pricing. Users can seamlessly purchase, transfer, and verify tickets while preventing fraud, scalping, and excessive fees.
 
-## Getting Started
+## 🚀 Getting Started
 
-First, run the development server:
-
+### 📌 Initialize Hardhat Project
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd ticket-contracts
+npx hardhat init
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🛠️ Compile Smart Contracts
+```bash
+npx hardhat compile
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🚀 Deploy Contracts to Local Blockchain
+```bash
+npx hardhat run --network localhost scripts/deploy.js
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔗 Run a Local Blockchain Node
+```bash
+npx hardhat node
+```
 
-## Learn More
+### 🔑 Configure Environment Variables
+Create a `.env` file and store the necessary credentials:
+```env
+MONGODB_URI=<your_mongodb_connection_string>
+CONTRACT_ADDRESS=<deployed_contract_address>
+ORGANIZER_PRIVATE_KEY=<organizer_wallet_private_key>
+CUSTOMER_PRIVATE_KEY=<customer_wallet_private_key>
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🖥️ Running the Development Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev  # or yarn dev, pnpm dev, bun dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+## 🐳 Running with Docker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
-# To build a docker image
+### 🏗️ Build the Docker Image
+```bash
 docker build --no-cache -t ticketchain .
-# To run a docker container
-docker run -p 3000:3000 ticketchain 
+```
 
+### 🚢 Run the Docker Container
+```bash
+docker run -p 3000:3000 ticketchain
+```
+
+Or, using **Docker Compose**:
+```bash
 docker-compose down
 docker-compose up --build
+```
 
-# To view the current docker container information
+### 🛠️ Docker Management
+
+#### 🔍 View Running Containers
+```bash
 docker ps
-# To execute the 
-docker exec -it 07174e811d1c sh
+```
 
-docker exec -it ff453558f236 /bin/bash
-# To deploy contracts
-npx hardhat run --network localhost scripts/deploy.js
+#### 🔧 Access Container Shell
+```bash
+docker exec -it <container-id> sh
