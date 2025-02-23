@@ -7,6 +7,7 @@ Key Features:
 2. Blockchain-Powered Security – Tickets are NFTs, ensuring authenticity & transparency
 3. Seamless Entry – Instant validation via QR code scanning & local blockchain node
 4. Lower Fees – Eliminates intermediaries, reducing costs for buyers & organizers
+
 Powered by Solidity, Ethers.js, OpenZeppelin, Next.js, and MongoDB, Ticketchain offers a trustless, efficient, and decentralized ticketing solution for the future of events.
 
 ## 🚀 Getting Started
