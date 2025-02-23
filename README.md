@@ -1,5 +1,5 @@
 # 🎟️ Ticketchain
-Ticketchain leverages **NFTs (Non-Fungible Tokens)** to revolutionize ticketing. Each ticket is uniquely verifiable on the blockchain, ensuring security, authenticity, and fair pricing. Users can seamlessly purchase, transfer, and verify tickets while preventing fraud, scalping, and excessive fees.
+Ticketchain leverages **NFTs (Non-Fungible Tokens)** to revolutionize ticketing. Each ticket is uniquely verifiable on the blockchain, ensuring security, authenticity, and fair pricing. Users can seamlessly purchase, transfer, and verify tickets while preventing fraud, scalping, and excessive fees. Powered by Solidity, Ethers.js, OpenZeppelin, Next.js, and MongoDB, Ticketchain offers a trustless, efficient, and decentralized ticketing solution for the future of events.
 
 ## 🚀 Getting Started
 
