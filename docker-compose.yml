@@ -1,0 +1,27 @@
+services:
+  ticketchain:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+      - POLYGON_RPC_URL=${POLYGON_RPC_URL}
+      - POLYGONSCAN_API_KEY=${POLYGONSCAN_API_KEY}
+    env_file:
+      - .env
+    networks:
+      - app-network
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
