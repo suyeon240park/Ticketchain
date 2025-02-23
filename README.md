@@ -1,5 +1,13 @@
+*This is a submission for the 2025 Harvard & Duke LIVE AI Ivy Plus Hackathon.
+
 # 🎟️ Ticketchain
-Ticketchain leverages **NFTs (Non-Fungible Tokens)** to revolutionize ticketing. Each ticket is uniquely verifiable on the blockchain, ensuring security, authenticity, and fair pricing. Users can seamlessly purchase, transfer, and verify tickets while preventing fraud, scalping, and excessive fees. Powered by Solidity, Ethers.js, OpenZeppelin, Next.js, and MongoDB, Ticketchain offers a trustless, efficient, and decentralized ticketing solution for the future of events.
+Traditional ticketing systems suffer from scalping, counterfeit tickets, and excessive fees. Ticketchain is a blockchain-powered NFT ticketing system that eliminates these issues by ensuring secure, transparent, and fair transactions.
+Key Features:
+1. No Scalping & Fraud – Smart contracts enforce resale price limits & verify ownership
+2. Blockchain-Powered Security – Tickets are NFTs, ensuring authenticity & transparency
+3. Seamless Entry – Instant validation via QR code scanning & local blockchain node
+4. Lower Fees – Eliminates intermediaries, reducing costs for buyers & organizers
+Powered by Solidity, Ethers.js, OpenZeppelin, Next.js, and MongoDB, Ticketchain offers a trustless, efficient, and decentralized ticketing solution for the future of events.
 
 ## 🚀 Getting Started
 
