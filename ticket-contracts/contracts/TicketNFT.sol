@@ -37,9 +37,8 @@ contract TicketNFT is ERC721URIStorage, Ownable {
         emit TicketResold(tokenId, newOwner, price);
     }
 
-    function validateTicket(uint256 tokenId) external onlyOwner {
-        require(!usedTickets[tokenId], "Ticket already used");
-        usedTickets[tokenId] = true;
+    function validateTicket(uint256 tokenId) external {
+        require(ownerOf(tokenId) == msg.sender, "You do not own this ticket");
         emit TicketValidated(tokenId);
     }
 }

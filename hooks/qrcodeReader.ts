@@ -24,7 +24,8 @@ export async function readQRFromFile(file: File): Promise<string | null> {
           const imageData = ctx.getImageData(0, 0, img.width, img.height);
           const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
 
-          resolve(qrCode ? qrCode.data : 'No QR code found');
+          // Return null if no QR code is found
+          resolve(qrCode ? qrCode.data : null);
         };
 
         img.onerror = () => reject(new Error('Failed to load image for QR reading'));
