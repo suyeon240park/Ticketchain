@@ -68,8 +68,8 @@ export default function Home() {
             <p>Built for [LIVE AI Ivy Plus] Harvard-Duke Hackathon by Suyeon Park and Aabha Joseph</p>
           </div>
           <div className="flex gap-4">
-            <a href="https://github.com/yourusername/your-repo" className="hover:underline">GitHub Repo</a>
-            <a href="https://www.youtube.com/watch?v=your-video-id" className="hover:underline">Submission Video</a>
+            <a href="https://github.com/suyeon240park/Ticketchain" className="hover:underline">GitHub Repo</a>
+            <a href="https://youtu.be/xSOGou9qy3A" className="hover:underline">Submission Video</a>
           </div>
         </div>
       </footer>
